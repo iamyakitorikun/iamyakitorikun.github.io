@@ -32,6 +32,7 @@ header .header-top ul.info {
   display: flex;
   float: right;
   margin: 40px 135.5px 35.5PX 0;
+  font-size:12px;
   color: #FFFFFF;
 }
 
