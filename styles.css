@@ -7,7 +7,7 @@ body {
 header {
   width: 100%;
   height: 700px;
-  background: url(sass/img/mainvisual.png);
+  background-image: url(sass/img/mainvisual.png);
   background-position: center center;
   background-size: cover;
 }
