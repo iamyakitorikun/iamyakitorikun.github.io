@@ -31,8 +31,9 @@ header .header-top ul.info {
   list-style: none;
   display: flex;
   float: right;
-  margin: 40px 135.5px 35.5PX 0;
-  font-size:12px;
+  margin: 40px 135px 35PX 0;
+  font-size:16px;
+  font-weight:bold;
   color: #FFFFFF;
 }
 
@@ -51,14 +52,17 @@ header .text {
 
 header .text h1 {
   font-size: 68px;
+  font-weight:bold;
   padding: 240px 0  0  0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 header .text h3 {
-  font-size: 38px;
-  margin-top: 12px;
+    font-size: 34px;
+    font-weight:bold;
+    margin-top: 8px;
+    margin-right: 12px;
 }
 
 header .text .info-btn {
@@ -67,9 +71,10 @@ header .text .info-btn {
   background: #3F51B5;
   color: #FFFFFF;
   font-size: 38px;
+  font-weight:bold;
   border-radius: 12px;
   display: block;
-  margin: 0 auto;
+  margin: 80px auto 0;
   line-height: 83px;
   box-shadow: 0px 3px 3px #afaeae;
 }
