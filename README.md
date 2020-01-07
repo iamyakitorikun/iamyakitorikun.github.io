@@ -1,0 +1,1 @@
+# iamyakitorikun.github.io
