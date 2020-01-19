@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Daytora2nd</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sass/styles.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="header-top">
-      <img class="logo" src="sass/img/logo.png">
+      <img class="logo" src="img/logo.png">
       <ul class="info">
-        <li class="active">Card</li>
-        <li>News</li>
-        <li>Plice</li>
-        <li>Access</li>
-        <li>Contact</li>
+        <li class="active"><a href="#card">Card</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#price">Price</a></li>
+        <li><a href="#map">Access</a></li>
+        <li><a href="#form">Contact</a></li>
       </ul>
    </div>
    <div class="text">
@@ -26,43 +29,229 @@
    </div>
 </header>
 
-<section class="cards">
+<section class="cards" id="card">
   <h1>Card</h1>
   <div class="underline"></div>
   <div class="cardflex">
     <div class="card">
-      <img src="sass/img/card-img-1.svg" alt="">
+      <img src="img/card-img.svg" alt="">
       <h5>タイトルタイトル</h5>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
     <div class="card">
-      <img src="sass/img/card-img-1.svg" alt="">
+      <img src="img/card-img.svg" alt="">
       <h5>タイトルタイトル</h5>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
     <div class="card">
-      <img src="sass/img/card-img-1.svg" alt="">
+      <img src="img/card-img.svg" alt="">
       <h5>タイトルタイトル</h5>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
     <div class="card">
-      <img src="sass/img/card-img-1.svg" alt="">
+      <img src="img/card-img.svg" alt="">
       <h5>タイトルタイトル</h5>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
     <div class="card">
-      <img src="sass/img/card-img-1.svg" alt="">
+      <img src="img/card-img.svg" alt="">
       <h5>タイトルタイトル</h5>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
     <div class="card">
-      <img src="sass/img/card-img-1.svg" alt="">
+      <img src="img/card-img.svg" alt="">
       <h5>タイトルタイトル</h5>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
 </div>
-  
 </section>
+
+<section class="news" id="news">
+    <h1>News</h1>
+    <div class="underline"></div>
+
+    <div class="informations">
+      <div class="information">
+        <div class="date">2019-01-30</div>
+        <a href="" class="lavel1">ラベル１</a>
+        <a>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a>
+        <a href="" class="read">read</a>
+        <!-- <i class="fas readfas fa-chevron-right"></i> -->
+
+      </div>
+
+      <div class="information">
+        <div class="date">2019-01-30</div>
+        <a href="" class="lavel2">ラベル2</a>
+        <a>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a>
+        <a href="" class="read">read</a>
+
+      </div>
+
+      <div class="information">
+        <div class="date">2019-01-30</div>
+        <a href="" class="lavel3">ラベル3</a>
+        <a>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a>
+        <a href="" class="read">read</a>
+
+      </div>
+    
+      <div class="information">
+        <div class="date">2019-01-30</div>
+        <a href="" class="lavel1">ラベル１</a>
+        <a>ニュースニュースニュースニュースニュースニュースニュースニュースニュース<br>ニュースニュースニュースニュース</a>
+        <a href="" class="read">read</a>
+
+      </div>
+
+      <div class="information">
+        <div class="date">2019-01-30</div>
+        <a href="" class="lavel1">ラベル１</a>
+        <a>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a>
+        <a href="" class="read">read</a>
+
+      </div>
+    </div>
+
+    <div class="next">
+    <a href="" class="more">more</a><i class="fas fa-chevron-right"></i>
+    </div>
+
+</section>
+
+<section class="price" id="price">
+  <h1>Price</h1>
+  <div class="underline"></div>
+  <div class="container">
+  <img src="img/price-img.png" alt="">
+  <div class="pricemap">
+    <table>
+      <tr>
+        <th></th>
+        <th>coloumn1</th>
+        <th>coloumn2</th>
+      </tr>
+      <tr>
+        <th>row1</th>
+        <td>100円</td>
+        <td>100円</td>
+      </tr>
+      <tr>
+        <th>row2</th>
+        <td>6,000円</td>
+        <td>0円</td>
+      </tr>
+      <tr>
+        <th>row3</th>
+        <td class="pricedown">6,000円<p>※ 今だけ半額</p></td>
+        <td>0円</td>
+      </tr>
+      <tr>
+        <th>row4</th>
+        <td>100円</td>
+        <td>100円</td>
+      </tr>
+    </table>
+  <p>※目安なので詳しくは<a href="">お問い合わせ</a>ください。</p>
+  </div>
+</div>
+</section>
+
+<sectin class="map" id="map">
+  <h1>Access</h1>
+  <div class="underline"></div>
+  <div class="mapcontainer">
+  <div class="osaka">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303769398!2d139.76494147968697!3d35.681236180291314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1578913416027!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+</div>
+  <div class="inner">
+  <p>住所  <span class="hoge">ほげほげほげのほげの場所</span></p>
+  <p>アクセス <span class="minute">〇〇駅から5分</span></p>
+  <a href=" " class="google-btn">Googleマップで見る<i class="fas fa-chevron-right"></i></a>
+  </div>
+</sectin>
+
+<section class="form" id="form">
+  <h1>Contact</h1>
+  <div class="underline"></div>
+
+  <div class="forminner">
+    <div class="namewrap">
+    <div class="name">
+      <label for="namespace">お名前</label>
+      <div class="need">必須</div>
+    </div>
+    <input id="namespace" type="text" placeholder="山田太郎">
+    </div>
+
+    <div class="mailwrap">
+    <div class="mail">
+      <label for="mailspace">メールアドレス</label>
+      <div class="need">必須</div>
+    </div>
+    <input id="mailspace" type="text" placeholder="text@example.com">
+    </div>
+  <div class="choicewrap">
+   <label  class="dorop" for="sikibetu">お問い合わせ識別</label>
+   <select id="sikibetu" name="example" placeholder="ーーー">
+      <option value="選択肢1" placeholder="ーーー">ーーー</option>
+      <option value="選択肢2">ーーー</option>
+      <option value="選択肢3">ーーー</option>
+   </select>
+  </div>
+   <div class="textwrap">
+      <label class="contents" for="a">お問い合わせ内容</label>
+      <textarea name="" id="a" cols="30" rows="10"
+      placeholder="お問い合わせを入力してください"></textarea>
+    </div>  
+  <div class="radio">
+  <label for=""><input class="blue" name="radio" type="radio">ラジオ1</label> 
+  <label for=""><input name="radio" type="radio">ラジオ2</label> 
+  <label for=""><input name="radio" type="radio">ラジオ3</label> 
+  </div>
+
+  <div class="check">
+  <label for=""><input type="checkbox"></label>
+  <p><a>プライバシーポリシー</a>に合意する</p> 
+ </div>
+
+  <a href=" " class="google-btn">送信する<i class="fas fa-chevron-right"></i></a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+  <div class="footerleft">
+    <img src="img/logo.png" alt="">
+    <p>住所：ほげほげのほげほげ</p>
+    <p>TEL：0000-00-0000</p>
+  </div>
+  <div class="footercenter">
+    <ul class="info">
+      <li>Card</li>
+      <li>News</li>
+      <li>Plice</li>
+      <li>Access</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="footerright">
+    <img src="img/twitter.svg" alt="">
+    <img src="img/facebook.svg" alt="">
+    <img src="img/instagram.svg" alt="">
+  </div>
+</div>
+<div class="go-top">
+  <img src="img/totop.svg" alt="">
+</div>
+<div class="copywite">
+  <p>Copyright © 2018 @haniwa008 All rights reserved.</p>
+</div>
+</footer>
+
+
+
   
 </body>
 </html>
