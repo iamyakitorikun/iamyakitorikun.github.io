@@ -645,6 +645,22 @@ footer .go-top {
   .news .underline {
     width: 60px;
   }
+  .news .informations {
+    margin: 0 10px 0 10px;
+    text-align: center;
+  }
+  .news .informations .information {
+    text-align: left;
+    width: 700px;
+  }
+  .news .informations .information .date {
+    margin-left: 7.5px;
+    display: block;
+  }
+  .news .informations .information .lavel1, .news .informations .information .lavel2, .news .informations .information .lavel3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .news a {
     font-size: 13px;
   }
