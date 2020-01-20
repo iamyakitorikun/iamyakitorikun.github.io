@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Daytora2nd</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sass/styles.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
 </head>
 <body>
   <header>
     <div class="header-top">
-      <img class="logo" src="img/logo.png">
+      <img class="logo" src="img/logo.png" alt="logo">
       <ul class="info">
         <li class="active"><a href="#card">Card</a></li>
         <li><a href="#news">News</a></li>
@@ -30,7 +31,7 @@
 </header>
 
 <section class="cards" id="card">
-  <h1>Card</h1>
+  <h2>Card</h2>
   <div class="underline"></div>
   <div class="cardflex">
     <div class="card">
@@ -67,7 +68,7 @@
 </section>
 
 <section class="news" id="news">
-    <h1>News</h1>
+    <h2>News</h2>
     <div class="underline"></div>
 
     <div class="informations">
@@ -120,7 +121,7 @@
 </section>
 
 <section class="price" id="price">
-  <h1>Price</h1>
+  <h2>Price</h2>
   <div class="underline"></div>
   <div class="container">
   <img src="img/price-img.png" alt="priceman">
@@ -157,12 +158,12 @@
 </div>
 </section>
 
-<sectin class="map" id="map">
-  <h1>Access</h1>
+<section class="map" id="map">
+  <h2>Access</h2>
   <div class="underline"></div>
   <div class="mapcontainer">
   <div class="osaka">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303769398!2d139.76494147968697!3d35.681236180291314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1578913416027!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303769398!2d139.76494147968697!3d35.681236180291314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1578913416027!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen=""></iframe>
   </div>
 </div>
   <div class="inner">
@@ -170,10 +171,10 @@
   <p>アクセス <span class="minute">〇〇駅から5分</span></p>
   <a href=" " class="google-btn">Googleマップで見る<i class="fas fa-chevron-right"></i></a>
   </div>
-</sectin>
+</section>
 
 <section class="form" id="form">
-  <h1>Contact</h1>
+  <h2>Contact</h2>
   <div class="underline"></div>
 
   <div class="forminner">
@@ -194,25 +195,25 @@
     </div>
   <div class="choicewrap">
    <label  class="dorop" for="sikibetu">お問い合わせ識別</label>
-   <select id="sikibetu" name="example" placeholder="ーーー">
-      <option value="選択肢1" placeholder="ーーー">ーーー</option>
+   <select id="sikibetu" name="example">
+      <option value="選択肢1">ーーー</option>
       <option value="選択肢2">ーーー</option>
       <option value="選択肢3">ーーー</option>
    </select>
   </div>
    <div class="textwrap">
       <label class="contents" for="a">お問い合わせ内容</label>
-      <textarea name="" id="a" cols="30" rows="10"
+      <textarea name="text" id="a" cols="30" rows="10"
       placeholder="お問い合わせを入力してください"></textarea>
     </div>  
   <div class="radio">
-  <label for=""><input class="blue" name="radio" type="radio">ラジオ1</label> 
-  <label for=""><input name="radio" type="radio">ラジオ2</label> 
-  <label for=""><input name="radio" type="radio">ラジオ3</label> 
+  <label><input class="blue" name="radio" type="radio">ラジオ1</label> 
+  <label><input name="radio" type="radio">ラジオ2</label> 
+  <label><input name="radio" type="radio">ラジオ3</label> 
   </div>
 
   <div class="check">
-  <label for=""><input type="checkbox"></label>
+  <label><input type="checkbox"></label>
   <p><a>プライバシーポリシー</a>に合意する</p> 
  </div>
 
