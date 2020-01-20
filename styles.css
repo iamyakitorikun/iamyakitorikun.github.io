@@ -92,7 +92,7 @@ header .text .info-btn {
   background-color: #EFEFEF;
 }
 
-.cards h1 {
+.cards h2 {
   margin-top: 0;
   margin-bottom: 44.3px;
   font-size: 60px;
@@ -139,7 +139,7 @@ header .text .info-btn {
   margin: 0 16px 0 16px;
 }
 
-.news h1 {
+.news h2 {
   margin-top: 0;
   margin-bottom: 44.3px;
   font-size: 60px;
@@ -254,7 +254,7 @@ header .text .info-btn {
   background-color: #EFEFEF;
 }
 
-.price h1 {
+.price h2 {
   margin-top: 0;
   margin-bottom: 44.3px;
   font-size: 60px;
@@ -322,7 +322,7 @@ header .text .info-btn {
   color: black;
 }
 
-.map h1 {
+.map h2 {
   margin-top: 0;
   margin-bottom: 44.3px;
   font-size: 60px;
@@ -381,7 +381,7 @@ header .text .info-btn {
   padding-bottom: 88px;
 }
 
-.form h1 {
+.form h2 {
   margin-top: 0px;
   margin-bottom: 44.3px;
   font-size: 60px;
@@ -630,7 +630,7 @@ footer .go-top {
     line-height: 63px;
     font-size: 26px;
   }
-  .cards h1 {
+  .cards h2 {
     font-size: 56px;
   }
   .cards .underline {
@@ -639,7 +639,7 @@ footer .go-top {
   .cards .cardflex {
     padding: 0 10px 0 10px;
   }
-  .news h1 {
+  .news h2 {
     font-size: 56px;
   }
   .news .underline {
@@ -664,7 +664,7 @@ footer .go-top {
   .news a {
     font-size: 13px;
   }
-  .price h1 {
+  .price h2 {
     font-size: 56px;
   }
   .price .underline {
@@ -679,7 +679,7 @@ footer .go-top {
   .price .container .pricemap {
     margin: 20px auto;
   }
-  .map h1 {
+  .map h2 {
     font-size: 56px;
   }
   .map .underline {
@@ -697,7 +697,7 @@ footer .go-top {
     width: 700px;
     height: 350px;
   }
-  .form h1 {
+  .form h2 {
     font-size: 56px;
   }
   .form .underline {
@@ -791,7 +791,7 @@ footer .go-top {
     line-height: 53px;
     font-size: 20px;
   }
-  .cards h1 {
+  .cards h2 {
     font-size: 48px;
   }
   .cards .underline {
@@ -802,7 +802,7 @@ footer .go-top {
     justify-content: center;
     padding: 0 15px 0 15px;
   }
-  .news h1 {
+  .news h2 {
     font-size: 48px;
   }
   .news .underline {
@@ -819,7 +819,7 @@ footer .go-top {
   .news .informations .information a {
     display: none;
   }
-  .price h1 {
+  .price h2 {
     font-size: 48px;
   }
   .price .underline {
@@ -829,7 +829,7 @@ footer .go-top {
     width: 400px;
     height: 450px;
   }
-  .map h1 {
+  .map h2 {
     font-size: 48px;
   }
   .map .underline {
@@ -847,7 +847,7 @@ footer .go-top {
     width: 480px;
     height: 250px;
   }
-  .form h1 {
+  .form h2 {
     font-size: 48px;
   }
   .form .underline {
