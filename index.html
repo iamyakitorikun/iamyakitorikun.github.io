@@ -10,9 +10,27 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script>
+  <link rel="stylesheet" href="animate.css/animate.css">
+  <script src="dist/wow.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
 </head>
 <body>
   <header>
+    <div class="drawer" id="toggle">
+      <div class="drawer-left">
+        <a href="#" class="close"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="drawer-right">
+        <ul class="drawer-info">
+          <li ><a class="li-close" href="#card">Card<i class="fas readfas fa-chevron-right"></i></a></li>
+          <li ><a class="li-close" href="#news">News<i class="fas readfas fa-chevron-right"></i> </a></li>
+          <li ><a class="li-close" href="#price">Price<i class="fas readfas fa-chevron-right"></i> </a></li>
+          <li ><a class="li-close" href="#map">Access<i class="fas readfas fa-chevron-right"></i> </a></li>
+          <li ><a class="li-close" href="#form">Contact<i class="fas readfas fa-chevron-right"></i> </a></li>
+        </ul>
+      </div>
+    </div>
     <div class="header-top">
       <img class="logo" src="img/logo.png" alt="logo">
       <ul class="info">
@@ -22,44 +40,59 @@
         <li><a href="#map">Access</a></li>
         <li><a href="#form">Contact</a></li>
       </ul>
+      <a><i class="fas drawer-show fa-bars"></i></a>
    </div>
-   <div class="text">
-  <h1>一番伝えたいことを書く</h1>
-  <h3>リードリードリード</h3>
-  <div class="info-btn">お問い合わせ</div>
-   </div>
+   <div class="swiper-container">
+    <div class="swiper-wrapper">     
+      <div class="swiper-slide">
+        <div class="text">
+        <h1>一番伝えたいことを書く</h1>
+        <h3>リードリードリード</h3>
+        <div class="info-btn">お問い合わせ</div>
+       </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url(img/pc1.jpg);"></div>
+      <div class="swiper-slide" style="background-image: url(img/pc2.jpg);"></div>
+      <div class="swiper-slide" style="background-image: url(img/pc3.jpg);"></div>
+      <div class="swiper-slide" style="background-image: url(img/pc4.jpg);"></div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+ 
 </header>
 
 <section class="cards" id="card">
   <h2>Card</h2>
   <div class="underline"></div>
   <div class="cardflex">
-    <div class="card">
+    <div class="card wow flipInY " data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="4" data-wow-iteration="1">
       <img src="img/card-img.svg" alt="card-img">
       <h5>タイトルタイトル</h5>
       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
-    <div class="card">
+    <div class="card wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="4" data-wow-iteration="1">
       <img src="img/card-img.svg" alt="card-img">
       <h5>タイトルタイトル</h5>
       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
-    <div class="card">
+    <div  class="card wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="4" data-wow-iteration="1">
       <img src="img/card-img.svg" alt="card-img">
       <h5>タイトルタイトル</h5>
       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
-    <div class="card">
+    <div  class="card wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="4" data-wow-iteration="1">
       <img src="img/card-img.svg" alt="card-img">
       <h5>タイトルタイトル</h5>
       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
-    <div class="card">
+    <div  class="card wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="4" data-wow-iteration="1">
       <img src="img/card-img.svg" alt="card-img">
       <h5>タイトルタイトル</h5>
       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
-    <div class="card">
+    <div  class="card wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="4" data-wow-iteration="1">
       <img src="img/card-img.svg" alt="card-img">
       <h5>タイトルタイトル</h5>
       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -77,7 +110,6 @@
         <a href="" class="lavel1">ラベル１</a>
         <a>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a>
         <a href="" class="read">read</a>
-        <!-- <i class="fas readfas fa-chevron-right"></i> -->
 
       </div>
 
@@ -244,7 +276,7 @@
   </div>
 </div>
 <div class="go-top">
-  <img src="img/totop.svg" alt="top-img">
+  <img id="top" src="img/totop.svg" alt="top-img">
 </div>
 <div class="copywite">
   <p>Copyright © 2018 @haniwa008 All rights reserved.</p>
@@ -252,7 +284,6 @@
 </footer>
 
 
-
-  
+<script src="main.js"></script>
 </body>
 </html>
