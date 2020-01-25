@@ -10,12 +10,90 @@ a:hover {
   cursor: pointer;
 }
 
+.drawer {
+  width: 100%;
+  height: 100vh;
+  z-index: 600;
+  position: fixed;
+  display: flex;
+  display: none;
+}
+
+.drawer .drawer-left {
+  width: 50%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.879);
+}
+
+.drawer .drawer-left .close {
+  float: right;
+  margin-top: 16px;
+  margin-right: 18px;
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+.drawer .drawer-right {
+  width: 50%;
+  height: 100vh;
+  background: #FFFFFF;
+}
+
+.drawer .drawer-right .drawer-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.drawer .drawer-right .drawer-info li {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  font-size: 16px;
+  border-bottom: 1px dotted #707070;
+}
+
+.drawer .drawer-right .drawer-info li a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #707070;
+}
+
+.drawer .drawer-right .drawer-info li a i {
+  position: absolute;
+  top: 17px;
+  right: 21.5px;
+}
+
 header {
   width: 100%;
   height: 700px;
+}
+
+header .swiper-container {
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+
+header .swiper-container .swiper-slide {
   background: url(../img/mainvisual.png);
   background-position: center center;
   background-size: cover;
+}
+
+header .swiper-container .swiper-button-prev, header .swiper-container .swiper-button-next {
+  width: 75px;
+  height: 75px;
+  margin-top: 50px;
+}
+
+header .swiper-container .swiper-button-prev {
+  background: url(../img/arrow-prev.svg);
+}
+
+header .swiper-container .swiper-button-next {
+  background: url(../img/arrow-next.svg);
 }
 
 header .header-top {
@@ -58,9 +136,21 @@ header .header-top ul.info .active {
   border-bottom: 3px solid #E81919;
 }
 
+header .header-top .drawer-show {
+  float: right;
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 29px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
 header .text {
   text-align: center;
   color: #333333;
+  z-index: 90;
 }
 
 header .text h1 {
@@ -597,7 +687,9 @@ footer .copywite p {
 }
 
 footer .go-top {
-  position: absolute;
+  position: fixed;
+  display: none;
+  cursor: pointer;
   bottom: 14px;
   right: 13px;
 }
@@ -770,17 +862,31 @@ footer .go-top {
   header {
     height: 550px;
   }
+  header .header-top {
+    height: 60px;
+  }
   header .header-top .logo {
-    width: 150px;
-    height: 35px;
-    margin: 34px 0 30px 50px;
+    width: 147px;
+    height: 29px;
+    margin: 16px 0 30px 50px;
   }
   header .header-top ul.info {
     display: none;
   }
+  header .header-top .drawer-show {
+    display: block;
+  }
+  header .swiper-container .swiper-button-prev,
+  header .swiper-container .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    border-radius: 50%;
+    margin-top: 50px;
+  }
   header .text h1 {
     padding-top: 280px;
-    font-size: 37px;
+    font-size: 34px;
   }
   header .text h3 {
     font-size: 23px;
