@@ -4,6 +4,11 @@ body {
   font-family: 'Lato', 'Noto Sans JP','Yu Gothic',sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 a:hover {
   transition: all 0.3s ease 0s;
   opacity: 0.6;
@@ -123,11 +128,6 @@ header .header-top ul.info li {
   margin-left: 30px;
 }
 
-header .header-top ul.info li a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
 header .header-top ul.info li:hover {
   border-bottom: 3px solid #E81919;
 }
@@ -176,6 +176,7 @@ header .text .info-btn {
   margin: 0 auto;
   line-height: 83px;
   box-shadow: 0px 3px 3px #afaeae;
+  cursor: pointer;
 }
 
 .cards {
@@ -290,6 +291,7 @@ header .text .info-btn {
   display: inline-block;
   margin-left: 15px;
   margin-right: 9.5px;
+  color: black;
 }
 
 .news .informations .information .read {
@@ -466,8 +468,94 @@ header .text .info-btn {
   text-decoration: none;
 }
 
+.accordion {
+  background-color: #EFEFEF;
+  padding-bottom: 88px;
+}
+
+.accordion h2 {
+  margin-top: 0;
+  margin-bottom: 44.3px;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 68px;
+}
+
+.accordion .underline {
+  margin: 0 auto 68.57px;
+  width: 76px;
+  display: block;
+  border-bottom: 5px solid #3F51B5;
+}
+
+.accordion .faq-list {
+  width: 80%;
+  margin: 14px auto;
+  list-style: none;
+}
+
+.accordion .faq-list .faq-list-item {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  color: #FFFFFF;
+}
+
+.accordion .faq-list .faq-list-item .item-top {
+  height: 60px;
+  background-color: #3F51B5;
+  position: relative;
+  line-height: 60px;
+}
+
+.accordion .faq-list .faq-list-item .item-top h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.accordion .faq-list .faq-list-item .item-top h3 span {
+  margin-right: 19px;
+  margin-left: 22px;
+  font-weight: bold;
+}
+
+.accordion .faq-list .faq-list-item .item-top .purase {
+  position: absolute;
+  font-size: 32px;
+  top: 1px;
+  right: 18.5px;
+}
+
+.accordion .faq-list .faq-list-item .item-top .purase:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.accordion .faq-list .faq-list-item .answer {
+  padding: 25px 27px 18px 55px;
+  position: relative;
+  color: #3F51B5;
+  border: 1px solid #3F51B5;
+  border-top: none;
+  background-color: #FFFFFF;
+  display: none;
+}
+
+.accordion .faq-list .faq-list-item .answer .biga {
+  position: absolute;
+  top: 25px;
+  left: 22px;
+}
+
+.accordion .faq-list .faq-list-item .answer p {
+  margin: 0;
+}
+
+.accordion .faq-list .faq-list-item .open {
+  display: block;
+}
+
 .form {
-  background-color: #efefef;
+  background-color: #dcd6d6;
   padding-bottom: 88px;
 }
 
@@ -595,8 +683,107 @@ header .text .info-btn {
   vertical-align: middle;
 }
 
-.form .forminner .check p a {
-  border-bottom: 1px solid black;
+.form .forminner .check a {
+  border-bottom: 1px solid #333333;
+}
+
+.form .forminner .mordalwrapper {
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: none;
+}
+
+.form .forminner .mordalwrapper .mordal {
+  width: 68%;
+  padding-bottom: 20px;
+  margin: auto;
+  box-shadow: 0px 0px 3px #e2e2e4;
+  color: #707070;
+  background-color: #FFFFFF;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-close {
+  position: relative;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-close .close-blue {
+  position: absolute;
+  top: -21.5px;
+  right: -21.5px;
+  color: #3F51B5;
+  font-size: 43px;
+  cursor: pointer;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-close .close-blue:hover {
+  opacity: 0.8;
+}
+
+.form .forminner .mordalwrapper .mordal h3 {
+  text-align: center;
+  padding-top: 65px;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.form .forminner .mordalwrapper .mordal .underline {
+  width: 155px;
+  margin-bottom: 48.5px;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-text {
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-text span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #3F51B5;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-text h4 {
+  margin-left: 24.5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-text p {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 18px 0 16px 27.5px;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-close-btn {
+  margin: 19px  auto 0;
+  display: block;
+  width: 180px;
+  height: 38px;
+  line-height: 38px;
+  color: #fff;
+  background-color: #3F51B5;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form .forminner .mordalwrapper .mordal .mordal-close-btn:hover {
+  opacity: 0.6;
+}
+
+.form .forminner .mordal-open {
+  display: block;
 }
 
 .form .forminner .google-btn {
@@ -1037,6 +1224,17 @@ footer .go-top {
   }
   .form .forminner .radio label {
     font-size: 14px;
+  }
+  .accordion h2 {
+    font-size: 48px;
+  }
+  .accordion .underline {
+    width: 50px;
+  }
+  .accordion .faq-list {
+    width: 80%;
+    font-size: 12px;
+    padding-left: 0;
   }
   footer {
     width: 100%;
