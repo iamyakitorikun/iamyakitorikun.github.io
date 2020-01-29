@@ -43,6 +43,47 @@ pagination: {
     $('.go-top').hide(500);
   }
 });
+
+$('body a').click(function(){
+  var id = $(this).attr("href");
+  var position = $(id).offset().top-50;
+  $('html,body').animate({
+    scrollTop:position,
+  },1500);
+});
+
+$('.infolist').click(function(){
+  $('.infolist').removeClass('active');
+  $(this).addClass('active');
+});
+
+
+
+$('.faq-list-item').click(
+  function() {
+    var $answer = $(this).find('.answer');
+    var change = $(this).find('.purase');
+   if($answer.hasClass('open')){
+    $($answer).removeClass('open');
+    $(change).text("+");
+   }else{
+    $($answer).addClass('open');
+    $(change).text("-").css('font-size','32px');
+   } 
+  }
+);
+
+$('#privace').click(function(){
+$('.mordalwrapper').addClass('mordal-open');
+});
+
+$('.close-m').click(function(){
+$('.mordalwrapper').removeClass('mordal-open');
+});
+
+  
+ 
+
  
 });
 
